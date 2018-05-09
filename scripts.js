@@ -29,7 +29,7 @@ function cadastrado(){
         for(let dados of info){
             console.log(dados);
             if( dados != ""){
-                document.getElementById("cad").innerHTML = "CADASTRADO";
+                document.getElementById("cad").innerHTML = "Cadastrado";
                 document.getElementById("cad").style.color="green";
                 }else{
                     document.getElementById("cad").innerHTML = "Preencha todos os campos";
@@ -37,6 +37,29 @@ function cadastrado(){
         }
   
     }
+
+let botaoCadastrar2 = document.querySelector("#botaoCadastrar2").addEventListener("click",cadastrado2);
+function cadastrado2(){
+    let cadName = document.querySelector("#name").value;
+    let cadNumber = document.querySelector("#number").value;
+    let cadBorn = document.querySelector("#born").value;
+    let cadEmail = document.querySelector("#email").value;
+    let cadCpf = document.querySelector("#cpf").value;
+    let cadAdress = document.querySelector("#adress").value;
+    let cadAbility = document.querySelector("#ability").value;
+
+    let cadData = [cadName,cadNumber,cadBorn,cadEmail,cadCpf,cadAdress,cadAbility];
+    for(let data of cadData){
+        console.log(data);
+        if(data != "" ){
+            document.querySelector("#cadValidation").innerHTML="Cadastrado";
+            document.querySelector("#cadValidation").style.color="green";
+        }else{
+            document.querySelector("#cadValidation").innerHTML="Preencha todos os campos";
+            document.querySelector("#cadValidation").style.color="red";
+        }
+    }
+}
 // fim verificação de cadastro
  
 // funções dos botoes

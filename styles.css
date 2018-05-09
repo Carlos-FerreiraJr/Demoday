@@ -165,6 +165,7 @@ li{
     flex-direction: column;   
     width:80%;
     height:100%;
+    /* border: 2px solid yellow; */
 }
 /* fim de configurações de cadastro */
 
@@ -174,3 +175,31 @@ input{
     height:25px;
     border-radius:6px;
 }
+
+
+.btnVoltar{
+    font-size: 14pt;
+    /* border:2px solid black; */
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:170px;
+    top:3px;
+    cursor: pointer;
+    font-weight: bold; 
+    background-color: rgba(235, 74, 15, 0.651);
+    width:120px;
+    border-radius:5px;
+} 
+
+h2{
+    /* border:2px solid green; */
+    display: flex;
+    align-items: center;
+}
+
+/* @media(max-width:1024px) and(min-width:720px){
+
+} */
