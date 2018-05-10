@@ -12,8 +12,6 @@ let home = document.querySelector(".home");
 let duvidas = document.querySelector(".duvidas");
 let cadastro2 = document.querySelector(".Cadastro2");
 // fim declaração de variavéis
-
-
 // verificação de cadastro
 let botaoCadastrar = document.querySelector("#botaoCadastrar").addEventListener("click",cadastrado);
 function cadastrado(){
@@ -27,7 +25,6 @@ function cadastrado(){
 
         let info = [fun, ap, num,nasc,email,cpf,ender];
         for(let dados of info){
-            console.log(dados);
             if( dados != ""){
                 document.getElementById("cad").innerHTML = "Cadastrado";
                 document.getElementById("cad").style.color="green";
@@ -50,7 +47,6 @@ function cadastrado2(){
 
     let cadData = [cadName,cadNumber,cadBorn,cadEmail,cadCpf,cadAdress,cadAbility];
     for(let data of cadData){
-        console.log(data);
         if(data != "" ){
             document.querySelector("#cadValidation").innerHTML="Cadastrado";
             document.querySelector("#cadValidation").style.color="green";
@@ -60,6 +56,8 @@ function cadastrado2(){
         }
     }
 }
+
+
 // fim verificação de cadastro
  
 // funções dos botoes
@@ -69,14 +67,16 @@ botao1.onclick = function(){
 botao2.onclick = function(){
     paginas[5].style.transform = "translateX(0)";
 }
+
+// console.log(btnVoltar);
 btnVoltar.onclick = function(){
     paginas[5].style.transform = "translateX(-100%)";
     paginas[4].style.transform = "translateX(-100%)";
     paginas[3].style.transform= "translateX(-100%)";
     paginas[2].style.transform= "translateX(-100%)";
     paginas[1].style.transform = "translateX(-100%)";
-
 }
+
 // fim da funcoes deos botoes
 
 // ao passar o mouse pela sidebar
