@@ -12,6 +12,7 @@ let home = document.querySelector(".home");
 let duvidas = document.querySelector(".duvidas");
 let cadastro2 = document.querySelector(".Cadastro2");
 let i = 0;
+let loginSection = document.querySelector("#loginHeader");
 // fim declaração de variavéis
 // verificação de cadastro
 let botaoCadastrar = document.querySelector("#botaoCadastrar").addEventListener("click",cadastrado);
@@ -79,13 +80,8 @@ function cadastrado(){
             
         }
     }
-    
     // fim da funcoes deos botoes
-    
-    // ao passar o mouse pela sidebar
-    option.onpointerenter = function(){
-        sidebar.style.display= "block";
-        // funções ao clicar na lista do sidebar
+    for(let i =0;i<paginas.length;i++){
         mais.onclick = function(){
             paginas[5].style.transform = "translateX(-100%)";
             paginas[4].style.transform = "translateX(-100%)";
@@ -93,6 +89,20 @@ function cadastrado(){
             paginas[2].style.transform="translateX(0)";
             paginas[1].style.transform = "translateX(-100%)";
         }
+        loginSection.onclick= function(){
+            paginas[5].style.transform = "translateX(-100%)";
+            paginas[4].style.transform = "translateX(-100%)";
+            paginas[3].style.transform="translateX(-100%)";
+            paginas[2].style.transform="translateX(0)";
+            paginas[1].style.transform = "translateX(-100%)";
+        }
+    }
+    
+    // ao passar o mouse pela sidebar
+    option.onpointerenter = function(){
+        sidebar.style.display= "block";
+        // funções ao clicar na lista do sidebar
+        
         missao.onclick = function(){
             paginas[5].style.transform = "translateX(-100%)";
             paginas[4].style.transform = "translateX(-100%)";

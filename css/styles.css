@@ -11,6 +11,8 @@ button{
     width:200px;
     transition: all 0.4s;
     width:11em;
+    background-color: rgba(235, 74, 15, 0.651);
+    color:white;
 }
 
 .logo{
@@ -84,7 +86,10 @@ section:nth-child(4){
     justify-content:center;
 }
 section:nth-child(5){
-    background:rgb(219, 12, 12);
+    background: rgb(16, 17, 17,0.9);
+    display: flex;
+    justify-content: center;
+    
 }
 section:nth-child(6){
     background:rgb(219, 12, 12);
@@ -296,7 +301,7 @@ h2{
 
 .btnvoltar02{
     position: relative;
-    left: 6em;
+    left:6em;
 }
 
 .paratexto{
@@ -312,4 +317,20 @@ a{
 .entrar{
     display: flex;
     justify-content: center;
+    height:23em;
+    width:32em;
 }
+
+#loginEntrar{
+    position: relative;
+    left:10em;
+    top:1em;
+}
+
+.btnvoltarlogin{
+    position:relative;
+    left:11.6em;
+}
+
+
+
