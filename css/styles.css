@@ -10,44 +10,50 @@ button{
     padding:20px;
     width:200px;
     transition: all 0.4s;
- }
- .botaoCadastrarVoltar{
-     margin-top:20px;
+    width:11em;
+}
+
+.logo{
+    width:175px;
+    height:50px;  
+}
+.botaoCadastrarVoltar{
+    margin-top:20px;
     display: flex;
     justify-content: space-between;
- }
- .btnVoltar span:after{
+}
+.btnVoltar span:after{
     content:'<';
     opacity: 0;
     position: absolute; 
-     top:0;
+    top:0;
     right:-20px;
     transition:0.4s;
- }  
- button span{
-     cursor: pointer;
-     display: inline-block;
-     position: relative;
-     transition: 0.4s;
-     font-family: 'sans-serif';
-     font-size: 17pt;
- }
- button:hover span{
-     padding-right: 25px;
- }
- 
- button span:after{
-     content:'>>';
-     opacity: 0;
-     position: absolute; 
-      top:0;
-     right:-20px;
-     transition:0.4s;
- }
- button:hover span:after{
-     opacity:1;
-     right:0;
- }
+}  
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+    font-family: 'sans-serif';
+    font-size: 1.6em;
+}
+button:hover span{
+    padding-right: 25px;
+}
+
+button span:after{
+    content:'>>';
+    opacity: 0;
+    position: absolute; 
+    top:0;
+    right:-20px;
+    transition:0.4s;
+}
+button:hover span:after{
+    opacity:1;
+    right:0;
+}
 
 /* fim botão configuração */
 /* section configuração */
@@ -55,10 +61,10 @@ section{
     padding: 20px;
     color: white;
     width: 100%;
-    height: 120vh;
+    height: 100em;
     overflow: auto;
     position: absolute;
-    margin-top: 10vh;
+    margin-top: 4.9em;
     top: 0;
     transform: translateX(100%);
     transition: 0.5s;
@@ -78,13 +84,13 @@ section:nth-child(4){
     justify-content:center;
 }
 section:nth-child(5){
-    background: blue;
+    background:rgb(219, 12, 12);
 }
 section:nth-child(6){
-    background:red;
+    background:rgb(219, 12, 12);
 }
 section:nth-child(7){
-    background:green;
+    background:rgb(219, 12, 12);
 }
 section:nth-child(8){
     background: rgb(16, 17, 17,0.9);
@@ -93,16 +99,23 @@ section:nth-child(8){
 }
 /* fim section configuração */
 /* header */
- header{
+header{
     display: flex;   
     justify-content: space-between;
-    width: 50%;
-    margin-left:10px;
+    width: 100%;
     align-items: center;
     height: 70px;
 }
-
- ul{
+.login{
+    border: 2px solid orangered
+}
+.logindiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:5em;
+}
+ul{
     display: flex;
     justify-content: space-between;
     flex-direction:column; 
@@ -116,8 +129,7 @@ li{
 /* fim header */
 /* inicio opcoes e sidebar  */
 #span{
-    
-    flex-basis: 20vh;
+    flex-basis:6em;
     align-self: center;
     display:flex;
     align-items:center;
@@ -128,6 +140,8 @@ li{
     background-color: rgb(16, 17, 17);
     cursor: pointer;
     transition:20s;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 .sidebar{
     display: none;
@@ -137,7 +151,7 @@ li{
     font-size:20px;
     height:100vh;
     width:30vh;
-    margin-top:-6px;
+    margin-top:0.4em;
     background-color:rgb(31, 33, 34);
     /* transform:translateY(-200%);
     transition:1s;    */
@@ -202,5 +216,100 @@ h2{
 }
 
 /* @media(max-width:1024px) and(min-width:720px){
-
+    
 } */
+
+
+
+/* initial page divPimagem divPtexto  divPimagem*/
+.initial01{
+    display:flex;
+    width:55%;
+    padding-top:5%;
+    border:2px solid yellow;
+}
+
+.init2{
+    padding-left:20%;
+}
+.initialpage1{
+    /* configuração das imagens da section */
+    width:300px;
+    height:300px;
+    border-radius: 0.5em;
+    border:none;
+}
+
+.divPimagem{
+}   
+.colorBoxText{
+    background-color:rgb(16, 17, 17,0.1);
+    border-radius: 2em;
+    padding:2em;
+    margin-left:-2em;
+    
+}
+.divPtexto{
+    font-family: sans-serif;
+    font-size:1.1em;
+    align-self: center;
+    padding:2em;
+    text-align: justify;
+    width:auto;
+}
+/* fim initial page */
+
+
+/* banner */
+.forBanner{
+    background-color:white;
+    width:95%;
+    border-bottom-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    display:flex;
+    flex-direction: column;
+}
+/* banner */
+
+/* entrar */
+.btnEntrar{
+    width:3em;
+    height:3em;
+}
+#loginHeader{
+    flex-basis:6em;
+    align-self: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    width:100px;
+    height: 45px;
+    background-color: rgb(16, 17, 17);
+    cursor: pointer;
+    transition:20s;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+
+.btnvoltar02{
+    position: relative;
+    left: 6em;
+}
+
+.paratexto{
+    font-size: 16pt;
+    line-height: 1.6em;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.entrar{
+    display: flex;
+    justify-content: center;
+}
