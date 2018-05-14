@@ -22,10 +22,10 @@ function cadastrado(){
     let num = document.querySelector("#num").value;
     let nasc = document.querySelector("#nasc").value;
     let email = document.querySelector("#email").value;
-    let cpf = document.querySelector("#cpf").value;
+    let senha = document.querySelector("#password").value;
     let ender = document.querySelector("#ender").value;
     
-    let info = [fun, ap, num,nasc,email,cpf,ender];
+    let info = [fun, ap, num,nasc,email,senha,ender];
     for(let dados of info){
         if( dados != ""){
             document.getElementById("cad").innerHTML = "Cadastrado";
@@ -42,13 +42,14 @@ function cadastrado(){
         let cadName = document.querySelector("#name").value;
         let cadNumber = document.querySelector("#number").value;
         let cadBorn = document.querySelector("#born").value;
-        let cadEmail = document.querySelector("#email").value;
-        let cadCpf = document.querySelector("#cpf").value;
+        let cadEmail = document.querySelector("#emailFor").value;
+        let cadPass = document.querySelector("#passwordfor").value;
         let cadAdress = document.querySelector("#adress").value;
         let cadAbility = document.querySelector("#ability").value;
         
-        let cadData = [cadName,cadNumber,cadBorn,cadEmail,cadCpf,cadAdress,cadAbility];
+        let cadData = [cadName,cadNumber,cadBorn,cadEmail,cadPass,cadAdress,cadAbility];
         for(let data of cadData){
+            console.log(data);
             if(data != "" ){
                 document.querySelector("#cadValidation").innerHTML="Cadastrado";
                 document.querySelector("#cadValidation").style.color="green";

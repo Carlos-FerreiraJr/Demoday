@@ -14,7 +14,90 @@ button{
     background-color: rgba(235, 74, 15, 0.651);
     color:white;
 }
+.Border{
+    background-color: white;
+    border-radius: 1em;
+    padding:2em;
+    opacity:0.8;
+}
 
+.pimg1,.pimg2,.pimg3{
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity:0.85;
+    margin-left:-1em;
+    margin-right:-1em;
+    
+}
+
+.sec{
+    text-align: center;
+    padding:50px 80px;
+    overflow-y: hidden;
+}
+
+
+.ptext{
+    position: relative;
+    top:-25%;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 27px;
+    letter-spacing: 2em;
+    text-transform: uppercase;
+}
+
+.ptext2{
+    position: relative;
+    top:-15%;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 27px;
+    letter-spacing: 2em;
+    text-transform: uppercase;
+}
+
+.imgforeat{
+    background-color:whitesmoke;
+    border:2px solid green;
+}
+
+.ptext .border{
+    background-color: #111;
+    color:white;
+    padding:20px;
+}
+
+
+.sectiondark{
+    background-color: rgb(16, 17, 17); /* #282e34 */
+    color:#ddd;
+    margin-top:-9em;
+    margin-left:-1em;
+    margin-right:-1em;
+    font-size: 15pt;
+    line-height: 1.8em;
+    
+}
+.pimg1{
+    background-image: url(../img/capabata.jpg);
+    min-height: 40%;
+    margin-top:-1em;
+}
+
+.pimg2{
+    background-image: url(../img/coverTeste.png);
+    min-height: 25%;
+    
+}
+.pimg3{
+    background-image: url(../img/compartilhe.jpg);
+    min-height: 25%;   
+}
 .logo{
     width:175px;
     height:50px;  
@@ -60,13 +143,13 @@ button:hover span:after{
 /* fim botão configuração */
 /* section configuração */
 section{
+    margin-top: 4em;
     padding: 20px;
     color: white;
     width: 100%;
-    height: 100em;
+    height: 110em;
     overflow: auto;
     position: absolute;
-    margin-top: 4.9em;
     top: 0;
     transform: translateX(100%);
     transition: 0.5s;
@@ -75,6 +158,7 @@ section{
 
 section.ativa{
     transform: translateX(0);
+    margin-left: -0.8em;
 }
 
 section:nth-child(3){
@@ -110,7 +194,11 @@ header{
     width: 100%;
     align-items: center;
     height: 70px;
+    background-color: whitesmoke;
+    position:fixed;
+    z-index: 2;
 }
+
 .login{
     border: 2px solid orangered
 }
@@ -156,7 +244,7 @@ li{
     font-size:20px;
     height:100vh;
     width:30vh;
-    margin-top:0.4em;
+    margin-top:3.5em;
     background-color:rgb(31, 33, 34);
     /* transform:translateY(-200%);
     transition:1s;    */
@@ -226,7 +314,7 @@ h2{
 
 
 
-/* initial page divPimagem divPtexto  divPimagem*/
+/* initial page divPimagem divPtexto  divPimagem
 .initial01{
     display:flex;
     width:55%;
@@ -238,15 +326,13 @@ h2{
     padding-left:20%;
 }
 .initialpage1{
-    /* configuração das imagens da section */
+    configuração das imagens da section 
     width:300px;
     height:300px;
     border-radius: 0.5em;
     border:none;
-}
+}  */
 
-.divPimagem{
-}   
 .colorBoxText{
     background-color:rgb(16, 17, 17,0.1);
     border-radius: 2em;
@@ -274,6 +360,7 @@ h2{
     border-top-right-radius: 2em;
     display:flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 /* banner */
 
@@ -331,6 +418,7 @@ a{
     position:relative;
     left:11.6em;
 }
-
-
-
+.initialImg{
+    width:30em;
+    height:30em;
+}

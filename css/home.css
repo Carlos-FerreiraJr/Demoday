@@ -23,6 +23,11 @@ button{
     right:-20px;
     transition:0.4s;
 }   */
+
+.imgfoodfixed{
+    width:15em;
+    
+}
 button span{
     cursor: pointer;
     display: inline-block;
@@ -54,13 +59,13 @@ section{
     height: 60em;
     overflow: auto;
     position: absolute;
-    margin-top: 4.9em;
     top: 0;
     transform: translateX(100%);
     transition: 0.5s;
 }
 
 section.ativa{
+    margin-top:4em;
     transform: translateX(0);
     display: flex;
     justify-content: center;
@@ -85,11 +90,14 @@ section:nth-child(3){
 
 header{
     display: flex;   
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    margin-left:10px;
     align-items: center;
     height: 70px;
+    position:fixed;
+    z-index: 2;
+    background-color: whitesmoke;
+
 }
 
 .cardapio{
@@ -115,9 +123,10 @@ header{
     border:2px solid yellow;
     width:15em;
     height:9.8em;
+    flex-direction: column;
     
 }
-
+/* primeira fileira */
 .quadradinho2{
     border:2px solid red;
     width:15em;
@@ -130,13 +139,6 @@ header{
     border:2px solid black;
     width:15em;
 }
-
-
-.imgfoodfixed{
-    width:15em;
-    
-}
-
 .quadradinho5{
     display:none;
     border:2px solid red;
@@ -155,7 +157,133 @@ header{
     width:15em;
     height:9.8em;
 }
+/* fim primeira fileira */
+/* segunda fileira */
 
+.quadradinho01{
+    display: flex;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho02{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho03{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho04{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho05{
+    display: none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho06{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho07{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+/* fim segunda fileira */
+.quadradinho001{
+    display: flex;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho002{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho002{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho003{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho004{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho005{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho006{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho007{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+/* fim fileira3 */
+.quadradinho0001{
+    display: flex;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho0002{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho0003{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho0004{
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho0005{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho0006{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
+.quadradinho0007{
+    display:none;
+    border:2px solid red;
+    width:15em;
+    height:9.8em;
+}
 .foodfull{
     width:15em;
     height:9.8em;
@@ -185,7 +313,41 @@ header{
     cursor: pointer;
     width:3.5em;
 }
-
 h2{
     margin-bottom: 2em;
+}
+
+#loginHeader{
+    flex-basis:6em;
+    align-self: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    width:100px;
+    height: 45px;
+    background-color: rgb(16, 17, 17);
+    cursor: pointer;
+    transition:20s;
+     border-top-left-radius: 1em;
+     border-bottom-left-radius: 1em;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+#span{
+    flex-basis:6em;
+    align-self: center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color:white;
+    width:100px;
+    height: 45px;
+    background-color: rgb(16, 17, 17);
+    cursor: pointer;
+    transition:20s;
+     border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
