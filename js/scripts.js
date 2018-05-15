@@ -34,7 +34,7 @@ function cadastrado(){
             document.getElementById("cad").innerHTML = "Preencha todos os campos";
             document.getElementById("cad").style.color="red";}
         }
-        
+
     }
     
     let botaoCadastrar2 = document.querySelector("#botaoCadastrar2").addEventListener("click",cadastrado2);

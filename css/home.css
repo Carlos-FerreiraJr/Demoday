@@ -10,6 +10,10 @@ button{
     width:200px;
     transition: all 0.4s;
 }
+
+#botao1{
+    
+}
 /* .botaoCadastrarVoltar{
     margin-top:20px;
     display: flex;
@@ -287,6 +291,7 @@ header{
 .foodfull{
     width:15em;
     height:9.8em;
+    opacity: 0.9;
 }
 .next{
     padding: 1em;
